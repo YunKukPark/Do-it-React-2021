@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Do-it-React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 리액트 시작하기
 
-## Available Scripts
+> 학습목표 : 리액트 개발을 위한 개발 환경 및 도구 사용법 학습  
+> 학습 후 ⇒ 리액트의 기초, 코드 품질을 유지하는 방법, 개발 방법 체험
 
-In the project directory, you can run:
+## Ⅰ. 리액트 시작하기
 
-### `npm start`
+[리액트 & 개발 환경 설정](https://www.notion.so/f06ae96b8be54923a1ab606526fa0fc4)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Ⅱ. 리액트 ES6 문법 엑기스
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[템플릿 문자열(``)](https://www.notion.so/547fe7c408c64c3c922e0488e7b1fd98)
 
-### `npm test`
+[전개연산자(...)](https://www.notion.so/95d26527d6b749558446342d78478f0c)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[가변 변수와 불변 변수 (let, const)](https://www.notion.so/let-const-c171dd2052a54b3780ab33199ee7dc0e)
 
-### `npm run build`
+[클래스 (class)](https://www.notion.so/class-a3b29fae440d4b798b66de1fca802cf5)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[화살표 함수(()⇒{})](https://www.notion.so/86c1fcffec9349c1ae8f4f689744cdf8)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[객체 확장 표현식과 구조 분해 할당](https://www.notion.so/3a021393d61540149dad915e6be73fb9)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[라이브러리 의존성 관리 (import)](https://www.notion.so/import-337c31dc2e7c4922a1e6384f5dfdf7d2)
 
-### `npm run eject`
+[배열 함수(forEach, map, reduce)](https://www.notion.so/forEach-map-reduce-fbfe5fec5e9d41dabda1060328e58726)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[비동기 함수(Promise)](https://www.notion.so/Promise-30842fb8e5064b5bb6974ae507c15b18)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[디바운스와 스로틀](https://www.notion.so/20bb449e28634f3da2801ff51ac617be)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# 🍯 Tip
 
-## Learn More
+### Reactjs code snippet
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| 키워드 | 설명                                               |
+| ------ | -------------------------------------------------- |
+| RCC    | 기본 React Component 코드를 생성                   |
+| RCCP   | React Component를 proptype과 함께 생성합니다.      |
+| RCFC   | React Component를 생명주기 함수와 함께 생성합니다. |
+| RPC    | React Pure Component를 생성합니다.                 |
+| RSC    | Functional Component 를 생성합니다.                |
+| RSCP   | Functional Component를 proptype 과 함께 생성합니다 |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prettier 기본 설정
 
-### Code Splitting
+```json
+{
+  "useTabs": false,
+  "printWidth": 100,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "semi": true,
+  "singleQuote": true
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+루트폴더에 `> touch .prettierrc` 한 후 위 내용을 붙혀넣는다
 
-### Analyzing the Bundle Size
+이후 vsCode [preferences > settings] 에서 Format On Save 설정 하기.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 도대체 비동기처리가 뭐에요?
 
-### Making a Progressive Web App
+[비동기 함수(Promise)](https://www.notion.so/Promise-30842fb8e5064b5bb6974ae507c15b18)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[https://www.youtube.com/watch?v=CA5EDD4Hjz4&t=51s](https://www.youtube.com/watch?v=CA5EDD4Hjz4&t=51s)
