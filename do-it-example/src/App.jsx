@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-import ChildProperty from './03/ChildProperty';
+import Counter from './03/Counter';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ChildProperty>
-          <div>
-            <span>자식노드</span>
-          </div>
-        </ChildProperty>
+        <Counter />
       </div>
     );
   }
