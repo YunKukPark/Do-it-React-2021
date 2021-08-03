@@ -5,7 +5,7 @@ class Counter extends Component {
     super(props);
     // state 정의
     this.state = {
-      count: 0,
+      count: props.count,
     };
 
     this.increaseCounter = this.increaseCounter.bind(this);
@@ -21,7 +21,7 @@ class Counter extends Component {
   render() {
     return (
       <div>
-        <span>카운트: {this.state.count}</span>
+        <span>현재 카운트: {this.state.count}</span>
         <button type="button" onClick={this.increaseCounter}>
           카운트 증가
         </button>
