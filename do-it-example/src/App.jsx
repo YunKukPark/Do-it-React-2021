@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Counter from './03/Counter';
-import NewCounter from './03/NewCounter';
+import ListExample from './03/ListExample';
 
 class App extends Component {
   constructor(props) {
@@ -18,9 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Counter count={this.state.count} />
-        <NewCounter count={this.state.count} />
-        <button onClick={this.resetCount}>{this.state.count + 10} 으로 초기화</button>
+        <ListExample />
       </div>
     );
   }
