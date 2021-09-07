@@ -8,6 +8,7 @@ class Input extends PureComponent {
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(e) {
+    console.log(this.props);
     const { name, onChange } = this.props;
     if (onChange) {
       onChange(name, e.target);
@@ -29,8 +30,6 @@ class Input extends PureComponent {
 
   render() {
     const { errorMessage, label, name, value, type, onFocus } = this.props;
-    console.log(this.props);
-    console.log(errorMessage);
     return (
       <div className="input-field">
         <input
