@@ -10,3 +10,15 @@ describe('<Input>', () => {
     }).not.toThrow();
   });
 });
+
+describe('contains <input>', () => {
+  it('renders one input', () => {
+    const wrapper = shallow(<Input name="test_name" />);
+    expect(wrapper.find('input')).toHaveLength(1);
+    expect(wrapper.find('label')).toHaveLength(1);
+  });
+
+  it('assigns the props value and type', () => {
+    //TODO: 여기서 부터 다시 시작하기 211006
+  });
+});
