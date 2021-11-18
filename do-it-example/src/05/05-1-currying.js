@@ -32,15 +32,16 @@
 }
 //  -----------------------
 
-{
-  const multiply = (a, b) => a * b;
-  const add = (a, b) => a + b;
+const multiply = (a, b) => a * b;
+const add = (a, b) => a + b;
 
-  const multiplyX = (x) => (a) => multiply(x, a);
-  const addX = (x) => (a) => add(x, a);
+const multiplyX = (x) => (a) => multiply(x, a);
+const addX = (x) => (a) => add(x, a);
 
-  const addFour = addX(4);
-  const multiplyTwo = multiplyX(2);
-  const multiplyThree = multiplyX(3);
-  const formula = (x) => addFour(multiplyThree(multiplyTwo(x)));
-}
+const addFour = addX(4);
+const multiplyTwo = multiplyX(2);
+const multiplyThree = multiplyX(3);
+const formula = (x) => addFour(multiplyThree(multiplyTwo(x)));
+
+// => ((x + 4) * 3) * 2
+const formulaB = (x) => multiplyTwo(multiplyThree(addFour(x)));
