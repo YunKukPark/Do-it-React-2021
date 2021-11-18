@@ -16,7 +16,6 @@ class Button extends PureComponent {
       secondary,
       onPress,
     } = this.props;
-    console.log(styles);
     return (
       <button
         {...css(
